@@ -1,3 +1,4 @@
+import { FiTrash } from 'react-icons/fi';
 import './App.css';
 
 function App() {
@@ -35,7 +36,7 @@ function App() {
         </form>
 
         <section className="flex flex-col bg-red-500">
-          <article className=" bg-white w-full rounded p-2">
+          <article className=" bg-white w-full rounded p-2 relative hover:scale-105 duration-500">
             <p>
               <span className="font-medium">Name:</span> Angel Alves
             </p>
@@ -46,7 +47,9 @@ function App() {
               <span className="font-medium">Status:</span> Active
             </p>
 
-            <button></button>
+            <button className="w-7 h-7 flex items-center justify-center absolute right-0 top-0">
+              <FiTrash size={18} color="red" />
+            </button>
           </article>
         </section>
       </main>
